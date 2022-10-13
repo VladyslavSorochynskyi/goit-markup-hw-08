@@ -1,0 +1,37 @@
+body {
+    background-color: #FFFFFF;
+    color: #212121;
+}
+
+.list {
+    list-style: none;
+}
+
+.site-nav a {
+    color: #212121;
+}
+
+.site-nav a:hover {
+    color: #2196F3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* цвет основного текста #212121 */
+
+/* вторичный цвет #757575;
+/*белый #FFFFFF */
+/*rgba(255, 255, 255, 0.6);*/
+
+/* акцент #2196F3 */
+
+
