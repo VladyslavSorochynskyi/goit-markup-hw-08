@@ -27,8 +27,11 @@ body {
     color: var(--primary-text-color);
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+.site-nav .link.current {
     color: var(--accent-color);
 }
 .contacts a{
@@ -50,6 +53,21 @@ body {
 
 section p {
     color: var(--text-color);
+}
+
+/*BUTTON*/
+.button {
+    color: var(--accent-color);
+    background-color: #2196F3;
+    
+    
+    
+}
+.button.primary {
+    color: var(--hero-color);
+    background-color: #2196F3;
+    
+    
 }
 
 /*FOOTER */
