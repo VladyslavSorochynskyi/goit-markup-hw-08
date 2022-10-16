@@ -8,7 +8,6 @@
 }
 
 body {
-    background-color: var(--hero-color);
     color: var(--primary-text-color);
 }
 
@@ -31,10 +30,9 @@ body {
 .site-nav .link:focus {
     color: var(--accent-color);
 }
-.site-nav .link.current {
-    color: var(--accent-color);
-}
-.contacts a{
+
+
+.contacts a {
     color: var(--text-color);
 }
 .contacts a:hover,
@@ -51,29 +49,23 @@ body {
 
 /*SECTION */
 
-section p {
+.section p {
     color: var(--text-color);
 }
 
 /*BUTTON*/
-.button {
-    color: var(--accent-color);
-    background-color: #2196F3;
-    
-    
-    
-}
-.button.primary {
-    color: var(--hero-color);
-    background-color: #2196F3;
-    
-    
-}
+
+
+
 
 /*FOOTER */
 
-
-
+.address a {
+    color: var(--text-color);
+}
+.address .map {
+    color: var(--hero-color);
+}
 
 
 

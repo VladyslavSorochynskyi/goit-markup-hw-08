@@ -5,35 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <header>
         <nav>
-        <a href="/">WebStudio</a>
-        <ul>
-            <li><a href="/index.html">Студія</a></li>
-            <li><a href="/">Портфоліо</a></li>
-            <li><a href="">Контакти</a></li>
-        </ul>
+            <a href="/" class="logo"><span class="web-logo">Web</span>Studio</a>
+             
+            <ul class="site-nav list">
+                <li><a href="./index.html" class="link">Студія</a></li>
+                <li><a href="/portfolio.html" class="link">Портфоліо</a></li>
+                <li><a href="" class="link">Контакти</a></li>
+            </ul>
         </nav>
-           
-        <ul>
-            <li><a href="info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+            <ul class="contacts list">
+                <li><a href="info@devstudio.com">info@devstudio.com</a></li>
+                <li><a href="+380961111111"> +38 096 111 11 11</a></li>
+            </ul>
     </header>
 
     <main>
        
-        <section>
-            <ul>
+        <section class="section">
+            <h1 class="hero-title">Проекти</h1>
+            <ul class="button-list list">
                 <li><button type="button">Усі</button></li>
                 <li><button type="button">Веб-сайти</button></li>
                 <li><button type="button">Додатки</button></li>
                 <li><button type="button">Дизайн</button></li>
                 <li><button type="button">Маркетинг</button></li>
             </ul>
-            <ul>
+            <ul class="projects list">
                 <li>
                     <img src="./images/portfolio/notebook.jpg" alt="Технокряк" width="370" height="294">
                     <h2>Технокряк</h2>
@@ -102,14 +104,14 @@
     </main>
 
     <footer>
-        <a href="/">WebStudio</a>
+        <a href="/" class="logo"><span class="web-logo">Web</span>Studio</a>
       <address>
-        <ul>
+        <ul class="address list">
         
-            <li><a href="https://goo.gl/maps/pwcy8Wqo1RzwF6ERA">м. Київ, пр-т Лесі Українки, 26</a></li>
-            <li><a href="info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="+380961111111">+38 096 111 11 11</a></li>
-            
+            <li><a href="https://goo.gl/maps/pwcy8Wqo1RzwF6ERA" target="_blank" rel="noreferrer noopener" class="map">м. Київ, пр-т Лесі Українки, 26</a></li>
+            <li><a href="info@devstudio.com" class="email">info@devstudio.com</a></li>
+            <li><a href="+380961111111" class="phone">+38 096 111 11 11</a></li>
+        
         </ul>
       </address>
     </footer>
