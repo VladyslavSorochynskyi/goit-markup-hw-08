@@ -9,14 +9,28 @@
 
 body {
     color: var(--primary-text-color);
+
+    font-family: Roboto, sans-serif;
 }
 
 /* HEADER */
 .logo {
     color: var(--logo-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
 }
 .web-logo {
     color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
 }
 .list {
     list-style: none;
@@ -24,6 +38,12 @@ body {
 
 .site-nav a {
     color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
 }
 
 .site-nav .link:hover,
@@ -34,6 +54,12 @@ body {
 
 .contacts a {
     color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
 }
 .contacts a:hover,
 .contacts a:focus {
@@ -44,27 +70,97 @@ body {
 
 .hero-title {
     color: var(--hero-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 
-/*SECTION */
-
+/*SECTIONS */
+.feature .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
 .section p {
     color: var(--text-color);
 }
 
-/*BUTTON*/
+.feature p {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
 
+.section .second-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
 
+.work h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
 
+.work p {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.projects .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.projects .desc{
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.03em;
+}
+/*BUTTON root: inherit*/
+
+.hero .button {
+    color: var(--hero-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer
+}
 
 /*FOOTER */
-
 .address a {
-    color: var(--text-color);
+    color:  rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
 }
 .address .map {
     color: var(--hero-color);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 
