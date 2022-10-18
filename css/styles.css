@@ -134,7 +134,7 @@ letter-spacing: 0.03em;
 }
 /*BUTTON root: inherit*/
 
-.hero .button {
+.button {
     color: var(--hero-color);
     background-color: var(--accent-color);
     font-weight: 700;
