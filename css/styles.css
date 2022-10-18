@@ -1,6 +1,5 @@
 :root {
     --primary-text-color: #212121;
-    --title-text-color: #212121;
     --text-color: #757575;
     --accent-color: #2196F3; 
     --hero-color: #FFFFFF;
@@ -132,9 +131,9 @@ font-size: 16px;
 line-height: 30px;
 letter-spacing: 0.03em;
 }
-/*BUTTON root: inherit*/
+/*BUTTON*/
 
-.button {
+.hero-button {
     color: var(--hero-color);
     background-color: var(--accent-color);
     font-weight: 700;
@@ -145,6 +144,23 @@ letter-spacing: 0.03em;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer
+}
+
+.button {
+    color: var(--primary-text-color);
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer
+}
+
+.button:hover,
+.button:focus {
+    color: var(--hero-color);
+    background-color: var(--accent-color);
 }
 
 /*FOOTER */
@@ -162,5 +178,3 @@ letter-spacing: 0.03em;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
-
-/*FOOTER */
