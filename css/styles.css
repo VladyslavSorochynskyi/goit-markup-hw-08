@@ -137,8 +137,17 @@ img {
 }
 
 /*SECTIONS */
-.feature-container {
+.feature-list {
   display: flex;
+  gap: 30px;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.feature-title {
+  margin-bottom: 10px;
 }
 .feature .title {
   font-weight: 700;
@@ -155,7 +164,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.section .second-title {
+.second-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -163,11 +172,30 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.work .image {
+.work-list {
+  display: flex;
+  gap: 30px;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-list .image {
   margin-bottom: 30px;
 }
 
-.work .name {
+.team-list .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -176,7 +204,7 @@ img {
   margin-bottom: 10px;
 }
 
-.work .direction {
+.team-list .direction {
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.18;
@@ -243,6 +271,12 @@ img {
 }
 
 /*FOOTER */
+.footer-logo {
+  margin-bottom: 20px;
+}
+.mail {
+  margin-bottom: 9px;
+}
 .address .contact-info {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
@@ -258,6 +292,7 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 
 /*     */
