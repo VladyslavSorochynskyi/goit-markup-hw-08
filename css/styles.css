@@ -58,6 +58,12 @@ img {
 }
 .site-nav {
   display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.contacts {
+  display: flex;
+  gap: 50px;
 }
 .logo {
   color: var(--logo-color);
