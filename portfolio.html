@@ -6,28 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="./index.html" class="logo"><span class="web-logo">Web</span>Studio</a>
-             
-            <ul class="site-nav list">
-                <li><a href="./index.html" class="link">Студія</a></li>
-                <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-                <li><a href="" class="link">Контакти</a></li>
-            </ul>
-        </nav>
+        <div class="header-container container">
+            <nav class="header-nav">
+                <a href="./index.html" class="logo" lang="en"><span class="web-logo" lang="en">Web</span>Studio</a>
+        
+                <ul class="site-nav list">
+                    <li><a href="./index.html" class="header-link link">Студія</a></li>
+                    <li><a href="./portfolio.html" class="header-link link">Портфоліо</a></li>
+                    <li><a href="" class="header-link link">Контакти</a></li>
+                </ul>
+            </nav>
             <ul class="contacts list">
                 <li><a href="info@devstudio.com" class="contact">info@devstudio.com</a></li>
                 <li><a href="+380961111111" class="contact">+38 096 111 11 11</a></li>
             </ul>
+        </div>
     </header>
 
     <main>
        
         <section class="section">
+            <div class="container">
             <h1 class="hero-title">Проекти</h1>
             <ul class="button-list list">
                 <li><button class="button" type="button">Усі</button></li>
@@ -36,85 +40,89 @@
                 <li><button class="button" type="button">Дизайн</button></li>
                 <li><button class="button" type="button">Маркетинг</button></li>
             </ul>
-            <ul class="projects list">
-                <li>
-                    <img src="./images/portfolio/notebook.jpg" alt="Технокряк" width="370" height="294">
+            <ul class="projects-list list">
+                <li class="projects-item">
+                    <img class="project-img" src="./images/portfolio/notebook.jpg" alt="Технокряк" width="370" height="294">
                     <h2 class="title">Технокряк</h2>
                     <p class="desc">
                         Веб-сайт
                     </p>
                 </li>
-                <li>
-                    <img src="./images/portfolio/basketball.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                <li class="projects-item">
+                    <img class="project-img" src="./images/portfolio/basketball.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
                     <h2 class="title">Постер New Orlean vs Golden Star</h2>
                     <p class="desc">
                         Дизайн
                     </p>
                 </li>
-                <li>
-                    <img src="./images/portfolio/seafood.jpg" alt="Ресторан Seafood" width="370" height="294">
+                <li class="projects-item">
+                    <img class="project-img" src="./images/portfolio/seafood.jpg" alt="Ресторан Seafood" width="370" height="294">
                     <h2 class="title">Ресторан Seafood</h2>
                     <p class="desc">
                         Додаток
                     </p>
                 </li>
-                <li>
-                    <img src="./images/portfolio/headphones.jpg" alt="Проєкт Prime" width="370" height="294">
+                <li class="projects-item">
+                    <img class="project-img" src="./images/portfolio/headphones.jpg" alt="Проєкт Prime" width="370" height="294">
                     <h2 class="title">Проєкт Prime</h2>
                     <p class="desc">
                         Маркетинг
                     </p>
                 </li>
-                <li>
-                    <img src="./images/portfolio/boxes.jpg" alt="Проєкт Boxes" width="370" height="294">
+                <li class="projects-item">
+                    <img class="project-img" src="./images/portfolio/boxes.jpg" alt="Проєкт Boxes" width="370" height="294">
                     <h2 class="title">Проєкт Boxes</h2>
                     <p class="desc">
                         Додаток
                     </p>
                 </li>
-                <li>
-                    <img src="./images/portfolio/display.jpg" alt="Inspiration has no Borders" width="370" height="294">
+                <li class="projects-item">
+                    <img class="project-img" src="./images/portfolio/display.jpg" alt="Inspiration has no Borders" width="370" height="294">
                     <h2 class="title">Inspiration has no Borders</h2>
                     <p class="desc">
                         Веб-сайт
                     </p>
                 </li>
-                <li>
-                    <img src="./images/portfolio/book.jpg" alt="Видання Limited Edition" width="370" height="294">
+                <li class="projects-item">
+                    <img class="project-img" src="./images/portfolio/book.jpg" alt="Видання Limited Edition" width="370" height="294">
                     <h2 class="title">Видання Limited Edition</h2>
                     <p class="desc">
                         Дизайн
                     </p>
                 </li>
-                <li>
-                    <img src="./images/portfolio/tag.jpg" alt="Проєкт LAB" width="370" height="294">
+                <li class="projects-item">
+                    <img class="project-img" src="./images/portfolio/tag.jpg" alt="Проєкт LAB" width="370" height="294">
                     <h2 class="title">Проєкт LAB</h2>
                     <p class="desc">
                         Маркетинг
                     </p>
                 </li>
-                <li>
-                    <img src="./images/portfolio/leptop.jpg" alt="Growing Business" width="370" height="294">
+                <li class="projects-item">
+                    <img class="project-img" src="./images/portfolio/leptop.jpg" alt="Growing Business" width="370" height="294">
                     <h2 class="title">Growing Business</h2>
                     <p class="desc">
                         Додаток
                     </p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
 
     <footer>
-        <a href="/" class="logo"><span class="web-logo">Web</span>Studio</a>
-      <address>
-        <ul class="address list">
+        <div class="container">
+            <a href="/" class="footer-logo logo" lang="en"><span class="web-logo" lang="en">Web</span>Studio</a>
+            <address>
+                <ul class="address list">
         
-            <li><a href="https://goo.gl/maps/pwcy8Wqo1RzwF6ERA" target="_blank" rel="noreferrer noopener" class="map">м. Київ, пр-т Лесі Українки, 26</a></li>
-            <li><a href="info@devstudio.com" class="contact-info">info@devstudio.com</a></li>
-            <li><a href="+380961111111" class="contact-info">+38 096 111 11 11</a></li>
+                    <li><a href="https://goo.gl/maps/pwcy8Wqo1RzwF6ERA" target="_blank" rel="noreferrer noopener" class="map">м.
+                            Київ, пр-т Лесі Українки, 26</a></li>
+                    <li><a href="info@devstudio.com" class="contact-info mail">info@devstudio.com</a></li>
+                    <li><a href="+380961111111" class="contact-info">+38 096 111 11 11</a></li>
         
-        </ul>
-      </address>
+                </ul>
+            </address>
+        </div>
     </footer>
     
 </body>
