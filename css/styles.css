@@ -51,6 +51,13 @@ img {
 /* HEADER */
 .header-container {
   display: flex;
+  align-items: center;
+}
+.header-nav {
+  margin-right: auto;
+}
+.site-nav {
+  display: flex;
 }
 .logo {
   color: var(--logo-color);
@@ -60,6 +67,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-right: 93px;
 }
 .web-logo {
   color: var(--accent-color);
