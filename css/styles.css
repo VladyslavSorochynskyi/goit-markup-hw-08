@@ -46,6 +46,7 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 1px dotted red;
 }
 
 /* HEADER */
@@ -55,17 +56,27 @@ img {
 }
 .header-nav {
   margin-right: auto;
+  display: flex;
+  align-items: center;
 }
 .site-nav {
   display: flex;
   gap: 50px;
   align-items: center;
 }
+.site-nav .header-link {
+  display: block;
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
 .contacts {
   display: flex;
   gap: 50px;
+  align-items: center;
 }
 .logo {
+  display: flex;
+  align-items: center;
   color: var(--logo-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -122,10 +133,13 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 /*SECTIONS */
+.feature-container {
+  display: flex;
+}
 .feature .title {
   font-weight: 700;
   font-size: 14px;
