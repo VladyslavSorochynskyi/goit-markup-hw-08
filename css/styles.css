@@ -70,8 +70,8 @@ header {
 
 .site-nav .header-link {
   display: block;
-  padding-top: 52px;
-  padding-bottom: 52px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contacts {
   display: flex;
@@ -128,7 +128,10 @@ header {
 }
 
 /* HERO */
-
+.section-hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .hero-title {
   color: var(--hero-color);
   font-weight: 900;
@@ -138,29 +141,28 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*SECTIONS */
+.feature-section {
+  padding-bottom: 0;
+}
 .feature-list {
   display: flex;
   gap: 30px;
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .feature-title {
   margin-bottom: 10px;
-}
-.feature .title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 10px;
 }
+
 .section .text {
   color: var(--text-color);
   font-size: 14px;
@@ -215,18 +217,32 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+.team1,
+.team2,
+.team3,
+.team4 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.hidden-title {
+  color: var(--hero-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  visibility: hidden;
+}
 .button-list {
   display: flex;
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: center;
   gap: 8px;
+  margin-bottom: 50px;
 }
-
+.project {
+  padding: 20px, 24px;
+}
 .projects-list {
   display: flex;
   flex-wrap: wrap;
@@ -304,7 +320,6 @@ header {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-bottom: 50px;
   padding: 6px 22px;
   margin-left: auto;
   margin-right: auto;
@@ -317,6 +332,10 @@ header {
 }
 
 /*FOOTER */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer-logo {
   margin-bottom: 20px;
 }
