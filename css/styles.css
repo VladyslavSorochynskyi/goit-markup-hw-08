@@ -79,14 +79,11 @@ header {
   align-items: center;
 }
 .contact-icon {
-  width: 16px;
-  height: 12px;
   fill: rgba(117, 117, 117, 1);
   margin-right: 10px;
+  align-items: center;
 }
-.contact-icon:hover {
-  fill: var(--accent-color);
-}
+
 .logo {
   display: flex;
   align-items: center;
@@ -131,9 +128,17 @@ header {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.contacts .contact:hover,
-.contacts .contact:focus {
+.contact:hover,
+.contact:focus {
   color: var(--accent-color);
+}
+.contact:hover .contact-icon,
+.contact:focus .contact-icon {
+  fill: var(--accent-color);
+}
+.header-contacts {
+  display: flex;
+  align-items: center;
 }
 
 /* HERO */
@@ -169,6 +174,9 @@ header {
 }
 
 /*SECTIONS */
+.feature-images {
+  display: flex;
+}
 .feature-section {
   padding-bottom: 0;
 }
@@ -262,7 +270,7 @@ header {
 }
 .social-icons {
   display: flex;
-  gap: 22px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   padding-left: 32px;
@@ -277,7 +285,8 @@ header {
   height: 44px;
   border-radius: 50%;
 }
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: rgba(33, 150, 243, 1);
 }
 .social-link:hover .team-icon,
@@ -399,6 +408,8 @@ header {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  max-width: 1600px;
+  background-color: #2f303a;
 }
 .footer-logo {
   margin-bottom: 20px;
@@ -407,7 +418,6 @@ header {
   margin-bottom: 9px;
 }
 .address .contact-info {
-  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.7;
@@ -415,7 +425,6 @@ header {
   text-decoration: none;
 }
 .address .map {
-  font-style: normal;
   color: var(--hero-color);
   font-size: 14px;
   line-height: 1.7;
@@ -423,5 +432,47 @@ header {
   text-decoration: none;
   margin-bottom: 20px;
 }
+.footer-content {
+  display: flex;
+}
+.footer-title {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--hero-color);
+  padding-top: 12px;
+}
+.social {
+  max-height: 80px;
+}
+.footer-icon {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.adress-content {
+  margin-right: 70px;
+}
+/* SVG */
+.soc-icon {
+  fill: var(--hero-color);
+}
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
-/*     */
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--accent-color);
+}
