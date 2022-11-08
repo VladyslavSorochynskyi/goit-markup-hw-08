@@ -41,7 +41,7 @@ img {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -50,7 +50,7 @@ img {
 
 /* HEADER */
 header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
@@ -360,15 +360,9 @@ header {
 .project-link {
   display: block;
 }
-.project-link:hover,
-.project-link:focus {
-  border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.project-link:hover .project,
-.project-link:focus .project {
-  border: 1px solid #eeeeee;
+
+.projects-item:hover,
+.projects-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -454,17 +448,24 @@ header {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  max-width: 1600px;
   background-color: #2f303a;
 }
 .footer-logo {
   margin-bottom: 20px;
+  color: var(--hero-color);
 }
 .mail {
   margin-bottom: 9px;
 }
+.addres-item {
+  margin-bottom: 9px;
+}
+.addres-item:last-child {
+  margin-bottom: 0;
+}
 .address .contact-info {
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -472,11 +473,11 @@ header {
 }
 .address .map {
   color: var(--hero-color);
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-bottom: 20px;
 }
 .footer-content {
   display: flex;
