@@ -88,13 +88,10 @@ header {
   opacity: 0;
 }
 
-.header-link:current::after {
+current::after {
   opacity: 1;
 }
 
-:current::after {
-  color: #2196f3;
-}
 .contacts {
   display: flex;
   gap: 50px;
