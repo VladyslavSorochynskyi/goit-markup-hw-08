@@ -866,7 +866,7 @@ img {
 .form__input-check:checked ~ .form__checkbox-icon {
   background-color: transparent;
   background-color: rgb(33, 150, 243);
-  background-image: url(../images/icon-check.svg);
+  background-image: url(/images/icon-check.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
