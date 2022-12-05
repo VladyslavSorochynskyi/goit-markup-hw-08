@@ -493,7 +493,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/*                    PARTNERS-TITLE        */
+/*                    PARTNERS-section        */
 .partners-section__title {
   font-weight: 700;
   font-size: 36px;
@@ -507,6 +507,11 @@ img {
   justify-content: center;
   gap: 30px;
 }
+.partners-section__icon {
+  fill: rgba(175, 177, 184, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .partners-section__link {
   display: flex;
   width: 170px;
@@ -521,12 +526,9 @@ img {
 .partners-section__link:focus {
   border: 1px solid #2196f3;
 }
-.partners-section__icon {
-  fill: rgba(175, 177, 184, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.partners-section__link:hover .partners-section-icon,
-.partners-section__link:focus .partners-section-icon {
+
+.partners-section__link:hover .partners-section__icon,
+.partners-section__link:focus .partners-section__icon {
   fill: rgba(33, 150, 243, 1);
 }
 /*FOOTER */
@@ -704,7 +706,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btn {
+.modal__btn {
   position: absolute;
 
   width: 30px;
@@ -724,13 +726,11 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-.modal-form-btn:focus {
+.modal__btn:hover,
+.modal__form-btn:focus {
   fill: #188ce8;
 }
-
-/*            MODAL FORM            */
-.modal-title {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -742,8 +742,8 @@ img {
   padding-right: 40px;
   margin-bottom: 12px;
 }
-
-.modal-form {
+/*            MODAL FORM            */
+.form {
   display: flex;
   flex-direction: column;
   font-size: 12px;
@@ -752,16 +752,16 @@ img {
   padding-left: 40px;
   padding-right: 40px;
 }
-.form-label {
+.form__label {
   margin-bottom: 10px;
   align-items: center;
   line-height: 1.16;
 }
-.form-group {
+.form__group {
   position: relative;
   margin-top: 4px;
 }
-.form-input {
+.form__input {
   width: 100%;
   padding: 12px 42px;
   height: 40px;
@@ -770,25 +770,25 @@ img {
   font-size: 16px;
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input:focus {
+.form__input:focus {
   outline: 1px solid rgba(33, 150, 243, 1);
 }
 
-.form-icon {
+.form__icon {
   position: absolute;
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input:focus + .form-icon {
+.form__input:focus + .form__icon {
   fill: rgba(33, 150, 243, 1);
 }
-.textarea-label {
+.form__textarea-label {
   margin-bottom: 20px;
   line-height: 1.16;
 }
-.form-textarea {
+.form__textarea {
   resize: none;
   width: 448px;
   height: 120px;
@@ -799,11 +799,11 @@ img {
   font-size: 14px;
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-textarea:focus {
+.form__textarea:focus {
   outline: 1px solid rgba(33, 150, 243, 1);
 }
 
-.form-checkbox {
+.form__checkbox {
   position: relative;
   align-items: center;
   justify-content: center;
@@ -816,7 +816,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.checkbox-icon {
+.form__checkbox-icon {
   position: absolute;
   left: 0;
   top: 0;
@@ -830,7 +830,7 @@ img {
     background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-check:checked ~ .checkbox-icon {
+.form__input-check:checked ~ .form__checkbox-icon {
   background-color: transparent;
   background-color: rgba(33, 150, 243, 1);
   background-image: url(../images/icon-check.svg);
@@ -840,25 +840,25 @@ img {
   background-origin: border-box;
   border: transparent;
 }
-.form-checkbox .form-link {
+.form__checkbox .form__link {
   color: var(--accent-color);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-.input-check {
+.form__input-check {
   opacity: 0;
   position: absolute;
   transform: translateY(10px);
   z-index: 10;
 }
-.check-label {
+.form__check-label {
   position: absolute;
   left: 0;
   top: 0;
   transform: translateX(30px);
 }
 
-.modal-form-btn {
+.form__modal-form-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -879,8 +879,8 @@ img {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-btn:focus,
-.modal-form-btn:hover {
+.form__modal-form-btn:focus,
+.form__modal-form-btn:hover {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
