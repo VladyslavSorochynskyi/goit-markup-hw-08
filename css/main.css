@@ -167,7 +167,7 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #c4c4c4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-img.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
@@ -866,7 +866,7 @@ img {
 .form__input-check:checked ~ .form__checkbox-icon {
   background-color: transparent;
   background-color: rgb(33, 150, 243);
-  background-image: url(/images/icon-check.svg);
+  background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
