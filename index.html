@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,12 @@
         <div class="header__header-container container">
             <nav class="nav">
                 <a href="./index.html" class="logo" lang="en"><span class="logo__web-logo" lang="en">Web</span>Studio</a>
+                <button type="button" class="header__menu-btn" aria-label="Переключатель мобильного меню" aria-expanded="false" data-modal-open>
+                    <svg width="40px" height="40px">
+                        <use class="header__icon-menu header__icon-menu--is-open" href="./images/icons.svg#icon-menu"></use>
+                        <use class="header__icon-close" href="./images/icons.svg#icon-close-menu"></use>
+                    </svg>
+                </button>
                 <ul class="nav__site-nav list">
                     <li class="nav__item"><a href="./index.html" class="nav__link nav__link--current link">Студія</a></li>
                     <li class="nav__item"><a href="./portfolio.html" class="nav__link link">Портфоліо</a></li>
@@ -428,6 +435,42 @@
             </form>
     </div>
 </div>
+
+<div class="header__backdrop header__backdrop--is-hidden" data-modal>
+    <div class="header__modal" data-modal>
+        <button class="header__modal__btn header__modal__btn--is-hidden" type="button" data-modal-close>
+            <svg class="" width="" height="">
+                <use href=""></use>
+            </svg>
+        </button>
+        <nav>
+            <ul class="header__nav-menu list">
+                <li class="header__nav-item"><a href="./index.html" class="header__nav-link link">Студія</a></li>
+                <li class="headder__nav-item"><a href="./portfolio.html" class="header__nav-link link">Портфоліо</a></li>
+                <li class="header__nav-item"><a href="" class="header__nav-link link">Контакти</a></li>
+            </ul>
+        </nav>
+        <ul class="header__modal-contacts list">
+            <li><a href="info@devstudio.com" class="header__modal-contact">info@devstudio.com</a></li>
+            <li><a href="+380961111111" class="header__modal-contact">+38 096 111 11 11</a></li>
+        </ul>
+        <ul class="header__socials list">
+            <li class="header__social-item"><a class="headeer__social-link link" href="https://www.instagram.com/" aria-label="Instagram" target="_blank"
+                    rel="noreferrer noopener">Instagram</a>
+            </li>
+            <li class="header__social-item"><a class="headeer__social-link link" href="https://twitter.com/" aria-label="Twitter" target="_blank"
+                    rel="noreferrer noopener">Twitter</a>
+            </li>
+            <li class="header__social-item"><a class="headeer__social-link link" href="https://www.facebook.com/" aria-label="Facebook" target="_blank"
+                    rel="noreferrer noopener">Facebook</a>
+            </li>
+            <li class="header__social-item"><a class="headeer__social-link link" href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank"
+                    rel="noreferrer noopener">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
 <script src="./js/modal.js"></script>
 </body>
 </html>
