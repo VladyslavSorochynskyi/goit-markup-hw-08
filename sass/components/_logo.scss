@@ -37,4 +37,10 @@
 .logo--footer {
     margin-bottom: 20px;
     color: var(--hero-color);
+
+    @media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 28px;
+    }
 }
