@@ -6,6 +6,18 @@
     @media screen and (max-width: 767px) {
         height: 604px;
     }
+
+        @media screen and (min-width: $tablet) {
+            height: 464px;
+        }
+}
+
+.footer__content {
+    @media screen and (min-width:$tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    }
 }
 
 .footer__container {
@@ -13,6 +25,15 @@
 }
 
 .footer__logo-adress {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: 165px;
+        
+    }
 
     @media screen and (max-width: 767px) {
     display: flex;
@@ -23,23 +44,15 @@
 }
 
 .footer__adress-content {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 60px;
-    }
+    margin-bottom: 60px;
 }
 
 .footer__addres-item {
-
-    @media screen and (max-width: 767px) {
-        margin-bottom: 12px;
-    }
+    margin-bottom: 12px;
 }
 
 .footer__addres-item:nth-last-child(1) {
-    
-    @media screen and (max-width: 767px) {
     margin-bottom: 0;
-    }
 }
 
 .footer__map {
@@ -59,6 +72,14 @@
 }
 
 .footer__social {
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: auto;
+        }
     @media screen and (max-width: 767px) {
         display: flex;
         flex-direction: column;
@@ -69,7 +90,6 @@
     
 }
 .footer__title {
-    @media screen and (max-width: 767px) {
     display: inline-block;
     margin-bottom: 20px;
     font-weight: 700;
@@ -78,8 +98,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--hero-color);
-    }
 }
+
 .footer__icon {
     display: flex;
     gap: 10px;
@@ -104,12 +124,10 @@
     }
 }
 .footer__mail-form {
-     @media screen and (max-width: 767px) {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
 }
 
 

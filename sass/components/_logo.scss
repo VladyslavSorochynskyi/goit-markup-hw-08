@@ -8,13 +8,15 @@
     text-decoration: none;
     margin-right: 93px;
 
-
+        @media screen and (min-width:$tablet) {
+            margin-right: 0;
+        }
         @media screen and (min-width:$desktop) {
             display: flex;
             align-items: center;
             font-size: 26px;
             line-height: 1.2;
-            }
+        }
     }
     
 
