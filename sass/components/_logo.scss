@@ -8,9 +8,7 @@
     text-decoration: none;
     margin-right: 93px;
 
-        @media screen and (min-width:$tablet) {
-            margin-right: 0;
-        }
+
         @media screen and (min-width:$desktop) {
             display: flex;
             align-items: center;
@@ -39,7 +37,9 @@
 .logo--footer {
     margin-bottom: 20px;
     color: var(--hero-color);
-
+    @media screen and (max-width: 1199px) {
+    margin-right: 0;
+    }
     @media screen and (max-width: 767px) {
     margin-right: auto;
     margin-left: auto;
