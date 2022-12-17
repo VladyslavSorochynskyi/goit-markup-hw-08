@@ -12,6 +12,18 @@
     flex-direction: column;
     gap: 30px;
     align-items: center;
+
+    @media screen and (min-width:$tablet) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    flex-wrap: wrap;
+    margin: -15px;
+    }
+
+    @media screen and (min-width:$desktop) {
+    flex-direction: row;
+    }
 }
 
 .team-section__item {
