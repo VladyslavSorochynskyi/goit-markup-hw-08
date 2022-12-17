@@ -13,6 +13,10 @@
 
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+
+    @media screen and (min-width:$tablet) {
+        display: none;
+    }
 }
 
 .menu-container.is-open {
