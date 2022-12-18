@@ -5,12 +5,25 @@
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
+
+    @media screen and (min-width:$desktop) {
+        font-size: 36px;
+        line-height: 1.16;
+        margin-bottom: 50px;
+    }
 }
 
 .partners-section__list {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+
+    @media screen and (min-width:$desktop) {
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 30px;
+        margin: 0;
+    }
 }
 
 .partners-section__item {
@@ -19,8 +32,13 @@
         width: calc((100% - 2 * 30px) / 2);
     }
 
+    @media screen and (min-width:$tablet) and (max-width:1199px){
+        margin: 15px;
+        width: calc((100% - 3 * 30px) / 3);
+    }
+
         &:nth-last-child(-n + 2) {
-            @media screen and (min-width:$tablet) and (max-width: 1199px) {
+            @media screen and (max-width: 1199px) {
                 margin-bottom: 0;
             }
         }
@@ -40,6 +58,11 @@
     &:focus {
         border: 1px solid #2196f3;
     }
+
+    @media screen and (min-width:$desktop) {
+        width: 170px;
+    }
+    
 }
 
 .partners-section__icon {

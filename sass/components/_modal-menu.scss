@@ -72,6 +72,10 @@
 }
 .contacts-menu__item {
     margin-bottom: 32px;
+
+    &:nth-last-child(1) {
+        margin-bottom: 0;
+    }
 }
 .contacts-menu__tel {
     font-weight: 500;
