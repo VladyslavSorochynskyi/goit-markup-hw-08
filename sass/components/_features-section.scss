@@ -1,5 +1,7 @@
 .feature {
+    @media screen and (min-width: $desktop) {
     padding-bottom: 0;
+    }
 }
 
 .feature__feature-list {
@@ -25,23 +27,10 @@
         margin: 15px;
         width: calc((100% - 2 * 30px) / 2);
         }
-
-&:nth-last-child(-n + 2) {
-    @media screen and (min-width:$tablet) and (max-width: 1199px) {
-        margin-bottom: 0;
-    }
-}
-}
-
-.feature__item:nth-last-child(-n + 2) {
-     @media screen and (min-width:$tablet) and (max-width: 1199px) {
-        margin-bottom: 0;
-    }
 }
 
 .feature__images {
     display: flex;
-    width: 450px;
     height: 120px;
     gap: 30px;
     align-items: center;
@@ -70,7 +59,7 @@
     text-transform: uppercase;
     text-align: center;
 
-    @media screen and (min-width:$tablet) and (max-width: 1199px) {
+    @media screen and (min-width:$tablet) {
         text-align: justify;
     }
 }
