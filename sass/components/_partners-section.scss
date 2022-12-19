@@ -51,7 +51,10 @@
     &:focus {
         border: 1px solid #2196f3;
     }
-
+    
+    @media screen and (min-width:$mobile) and (max-width: 767px) {
+        width: 210px;
+    }
     @media screen and (min-width:$tablet) and (max-width: 1199px) {
         width: 226px;
     }

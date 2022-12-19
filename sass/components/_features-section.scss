@@ -39,6 +39,10 @@
     border-radius: 4px;
     margin-bottom: 30px;
 
+    @media screen and (min-width:$mobile) and (max-width: 767px) {
+        width: 450px;
+    }
+
     @media screen and (min-width:$tablet) and (max-width: 1199px) {
         width: 354px;
         height: 120px;

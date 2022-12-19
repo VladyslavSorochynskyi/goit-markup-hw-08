@@ -68,7 +68,11 @@
         line-height: 1.36;
         width: 696px;
     }
-}
+
+    @media screen and (min-width:$mobile) and (max-width: 1199px) {
+        width: 360px;
+    }
+ }
 
 .section-hero__button {
     min-width: 200px;
